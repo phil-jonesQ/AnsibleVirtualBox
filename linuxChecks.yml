@@ -1,0 +1,8 @@
+---
+- name: Add a privileged user for Ansible
+  hosts: pj_node_VMs
+  tasks:
+    - name: Print Memory and CPU Cores 
+      debug: 
+        msg: "Host {{ ansible_hostname }} has {{ ansible_memtotal_mb }} MB Memory and {{ ansible_processor_cores }} CPU Cores. OS is {{ ansible_distribution }}"
+

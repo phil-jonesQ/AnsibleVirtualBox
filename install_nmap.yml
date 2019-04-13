@@ -1,0 +1,11 @@
+--- 
+- 
+  become: true
+  hosts: pj_node_VMs
+  tasks: 
+    - 
+      name: "install nmap"
+      yum: 
+        name: nmap
+        state: latest
+
