@@ -1,0 +1,9 @@
+---
+- name: Add a privileged user for Ansible
+  hosts: pj_node_VMs
+  tasks:
+    - name: Cleardown ISO files
+      shell: rm -fv /home/philjones/*.iso
+      args:
+        warn: false
+...

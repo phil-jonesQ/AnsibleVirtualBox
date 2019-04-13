@@ -2,7 +2,7 @@
 - name: Check Disk Space And Report
   hosts: pj_node_VMs
   vars: 
-    disk_limit: 0.8
+    disk_limit: 0.9
   tasks:
     - name: Print Memory and CPU Cores 
       debug: 
@@ -27,3 +27,4 @@
         msg: "Disk usage {{ disk_usage_ratio_s }} exceeds {{ disk_limit_ratio_s }}"
       tags: disk
       any_errors_fatal: true
+...

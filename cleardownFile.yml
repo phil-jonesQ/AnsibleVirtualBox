@@ -1,0 +1,8 @@
+---
+- name: Add a privileged user for Ansible
+  hosts: pj_node_VMs
+  tasks:
+    - name: Delete Debug Files
+      file:
+       path: /home/philjones/debug.log.2
+       state: absent
