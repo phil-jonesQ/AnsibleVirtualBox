@@ -1,0 +1,11 @@
+[pj_node_VMs:vars]
+ansible_user=philjones  # ssh login user
+ansible_become=yes  # use sudo 
+ansible_become_method=sudo 
+ansible_become_pass='{{ my_pj_node_sudo_pass }}'
+
+[pj_node_VMs]
+192.168.200.50
+192.168.200.51
+192.168.200.52
+192.168.200.53

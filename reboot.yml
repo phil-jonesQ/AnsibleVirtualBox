@@ -1,0 +1,18 @@
+--- 
+- 
+  hosts: pj_node_VMs
+  tasks: 
+    - 
+      become: true
+      name: "reboot host"
+      shell: "/sbin/shutdown -r now"
+    - 
+      args: 
+        delay: 30
+        host: ""
+        port: 22
+        state: started
+        timeout: 300
+      become: false
+      local_action: wait_for
+      name: "waiting for server booting up"
