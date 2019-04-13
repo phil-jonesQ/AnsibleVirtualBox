@@ -5,7 +5,7 @@
     - 
       become: true
       name: "reboot host"
-      shell: "/sbin/shutdown -r now"
+      shell: "/sbin/shutdown -r +1"
     - 
       args: 
         delay: 30
