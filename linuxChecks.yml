@@ -1,5 +1,5 @@
 ---
-- name: Add a privileged user for Ansible
+- name: Basic Information About The Host
   hosts: pj_node_VMs
   tasks:
     - name: Print Memory and CPU Cores 
