@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
+if [[ "$#" -ne 2 ]]; then
     echo "Illegal number of parameters"
 fi
 
@@ -19,4 +19,6 @@ esac
 
 echo VBoxManage $manageStringCommand
 VBoxManage $manageStringCommand
+
+exit 0
 
