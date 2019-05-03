@@ -24,3 +24,5 @@ Setup passwordless ssh to each VM
 dnf install -y ansible
 
 Then you are ready to play with ansible
+
+Phil Jones 2019
